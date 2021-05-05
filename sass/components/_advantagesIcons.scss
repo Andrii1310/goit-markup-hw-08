@@ -1,0 +1,27 @@
+// Icons advantages
+.advantages__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: getColor('secondary-bg');
+  height: 120px;
+  border-radius: 4px;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+.icon__antenna {
+  width: 66px;
+  height: 70px;
+}
+.icon__clock {
+  width: 67px;
+  height: 70px;
+}
+.icon__diagram {
+  width: 70px;
+  height: 54px;
+}
+.icon__astronaut {
+  width: 70px;
+  height: 62px;
+}

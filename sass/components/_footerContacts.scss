@@ -1,0 +1,24 @@
+.footer__adress {
+  margin-bottom: 9px;
+  font-style: normal;
+  color: getColor('primary-bg');
+}
+.footer-contact__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-contact__link {
+  display: block;
+  color: getColor('accent-text');
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: getColor('primary-link');
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

@@ -1,0 +1,35 @@
+// Кнопка закрытия модального окна
+.form-button__close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: getColor('primary-bg');
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: ' ';
+    position: absolute;
+    height: 18px;
+    width: 2px;
+    background-color: getColor('secondary-text');
+  }
+
+  &:before {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+  &:after {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: getColor('primary-link');
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

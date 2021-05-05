@@ -1,0 +1,22 @@
+.advantages-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages__list {
+  display: flex;
+  margin-left: -30px;
+}
+.advantages__item {
+  display: block;
+  margin-left: 30px;
+  width: calc((100% - 30px * 4) / 4);
+}
+.advantages__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: getColor('secondary-text');
+  text-transform: uppercase;
+}

@@ -1,0 +1,26 @@
+// Основной цвет шрифта Roboto серый color: #757575;
+// Вторичный цвет шрифта Roboto черный color:#212121;
+// Вторичный цвет шрифта Roboto белый color: #FFFFFF;
+// Основной цвет ссылки: #2196F3;
+// Вторичный цвет ссылки: #188ce8;
+// Цвет шрифта адреса в футере color: rgba(255, 255, 255, 0.6);
+// Первичный цвет фона background: #FFFFFF;
+// Вторичный цвет фона background: #2F303A;
+// Цвет фона секции "Наша команда" background: #F5F4FA;
+$colors: (
+  'primary-text': #757575,
+  'accent-text': rgba(255, 255, 255, 0.6),
+  'secondary-text': #212121,
+  'primary-link': #2196f3,
+  'accent-link': #188ce8,
+  'primary-bg': #ffffff,
+  'accent-bg': #2f303a,
+  'secondary-bg': #f5f4fa,
+  'primary-border': #eeeeee,
+  'accent-border': #ececec,
+  'primary-icon': #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
