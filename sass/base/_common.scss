@@ -1,12 +1,12 @@
 body {
   background-color: var(--primary-bg-color);
   font-family: Roboto, sans-serif;
+  color: getColor('primary-text');
+  @include fonts(14px, 400, 1.71, 0.03em);
   // font-size: 14px;
   // font-weight: 400;
   // line-height: 1.71;
   // letter-spacing: 0.03em;
-  color: getColor('primary-text');
-  @include fonts(14px, 400, 1.71, 0.03em);
 }
 
 h1,
