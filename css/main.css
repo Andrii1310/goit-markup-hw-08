@@ -470,7 +470,7 @@ img {
   height: 5px;
   background-color: currentColor;
   border-radius: 2px;
-  transform: translateY(25px);
+  transform: translateY(30px);
 }
 .header-contact {
   display: flex;
@@ -583,14 +583,15 @@ img {
 }
 
 .mobile-menu {
+  position: fixed;
   z-index: 100;
-  position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 0;
+  left: 0;
   display: none;
+  overflow: auto;
   width: 100%;
   max-width: 767.98px;
-  height: 100vh;
+  height: 796px;
   padding: 48px 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1136,7 +1137,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
-  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/mobile/hero_overlay.png), url(../images/main/mobile/hero_mobile.jpg);
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/mobile/hero_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1144,27 +1145,32 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(../images/main/mobile/hero_overlay@2x.png), url(../images/main/mobile/hero_mobile@2x.jpg);
+    background-color: #2f303a;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/mobile/hero_mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 480px) {
   .hero-section {
-    background-image: url(../images/main/tablet/hero_overlay.png), url(../images/main/tablet/hero_tablet.jpg);
+    background-color: #2f303a;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/tablet/hero_tablet.jpg);
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(../images/main/tablet/hero_overlay@2x.png), url(../images/main/tablet/hero_tablet@2x.jpg);
+    background-color: #2f303a;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/tablet/hero_tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: url(../images/main/desktop/hero_overlay.png), url(../images/main/desktop/hero_desktop.jpg);
+    background-color: #2f303a;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/desktop/hero_desktop.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url(../images/main/desktop/hero_overlay@2x.png), url(../images/main/desktop/hero_desktop@2x.jpg);
+    background-color: #2f303a;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/desktop/hero_desktop@2x.jpg);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767.98px) {
@@ -1188,7 +1194,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 320px) and (max-width: 1199.98px) {
   .advantages-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1200,10 +1206,12 @@ img {
   flex-basis: 100%;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .advantages__item {
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
   .advantages__item {
@@ -1229,14 +1237,19 @@ img {
   color: #212121;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767.98px) {
+  .advantages__title {
+    text-align: center;
+  }
+}
 
 .activity-section {
   display: none;
-  padding-bottom: 94px;
 }
 @media screen and (min-width: 1200px) {
   .activity-section {
-    display: inline;
+    display: flex;
+    margin-bottom: 94px;
   }
 }
 
@@ -1248,7 +1261,7 @@ img {
 }
 
 .activity__item {
-  width: calc((100% - 30px * 3) / 3);
+  flex-basis: calc((100% - 30px * 3) / 3);
   height: auto;
   position: relative;
 }
@@ -1302,16 +1315,19 @@ img {
 @media screen and (min-width: 480px) and (max-width: 767.98px) {
   .team__item {
     flex-basis: calc(100% - 30px);
+    padding-bottom: 24px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .team__item {
     flex-basis: calc((100% - 30px * 2) / 2);
+    padding-bottom: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
     flex-basis: calc((100% - 30px * 4) / 4);
+    padding-bottom: 30px;
   }
 }
 

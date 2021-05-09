@@ -27,14 +27,15 @@
 }
 
 .mobile-menu {
+  position: fixed;
   z-index: 100;
-  position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 0;
+  left: 0;
   display: none;
+  overflow: auto;
   width: 100%;
   max-width: 767.98px;
-  height: 100vh;
+  height: 796px;
   padding: 48px 40px;
   background-color: getColor('primary-bg');
 

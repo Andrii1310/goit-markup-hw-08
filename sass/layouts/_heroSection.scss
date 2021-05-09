@@ -11,7 +11,6 @@
       rgb(47, 48, 58, 0.4),
       rgb(47, 48, 58, 0.4)
     ),
-    url(../images/main/mobile/hero_overlay.png),
     url(../images/main/mobile/hero_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -21,30 +20,55 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/main/mobile/hero_overlay@2x.png),
+    background-color: getColor('accent-bg');
+    background-image: linear-gradient(
+        to left,
+        rgb(47, 48, 58, 0.4),
+        rgb(47, 48, 58, 0.4)
+      ),
       url(../images/main/mobile/hero_mobile@2x.jpg);
   }
 
   @media screen and (min-width: 480px) {
-    background-image: url(../images/main/tablet/hero_overlay.png),
+    background-color: getColor('accent-bg');
+    background-image: linear-gradient(
+        to left,
+        rgb(47, 48, 58, 0.4),
+        rgb(47, 48, 58, 0.4)
+      ),
       url(../images/main/tablet/hero_tablet.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/main/tablet/hero_overlay@2x.png),
+      background-color: getColor('accent-bg');
+      background-image: linear-gradient(
+          to left,
+          rgb(47, 48, 58, 0.4),
+          rgb(47, 48, 58, 0.4)
+        ),
         url(../images/main/tablet/hero_tablet@2x.jpg);
     }
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../images/main/desktop/hero_overlay.png),
+    background-color: getColor('accent-bg');
+    background-image: linear-gradient(
+        to left,
+        rgb(47, 48, 58, 0.4),
+        rgb(47, 48, 58, 0.4)
+      ),
       url(../images/main/desktop/hero_desktop.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/main/desktop/hero_overlay@2x.png),
+      background-color: getColor('accent-bg');
+      background-image: linear-gradient(
+          to left,
+          rgb(47, 48, 58, 0.4),
+          rgb(47, 48, 58, 0.4)
+        ),
         url(../images/main/desktop/hero_desktop@2x.jpg);
     }
   }

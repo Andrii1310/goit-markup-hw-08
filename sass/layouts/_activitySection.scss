@@ -1,9 +1,9 @@
 .activity-section {
   display: none;
-  padding-bottom: 94px;
 
   @media screen and (min-width: 1200px) {
-    display: inline;
+    display: flex;
+    margin-bottom: 94px;
   }
 }
 .activity__list {
@@ -15,7 +15,7 @@
 }
 
 .activity__item {
-  width: calc((100% - 30px * 3) / 3);
+  flex-basis: calc((100% - 30px * 3) / 3);
   height: auto;
   position: relative;
 
