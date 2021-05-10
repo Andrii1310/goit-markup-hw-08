@@ -593,6 +593,7 @@ img {
   overflow-y: scroll;
   width: 100%;
   max-width: 767.98px;
+  height: 100%;
   max-height: 796px;
   padding: 48px 40px;
   background-color: #ffffff;
