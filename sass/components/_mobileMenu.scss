@@ -1,7 +1,7 @@
 .mobile-menu-btn {
   z-index: 101;
-  width: 40px;
-  height: 40px;
+  // width: 40px;
+  // height: 40px;
   margin-left: auto;
   padding: 0;
   background-color: transparent;
@@ -32,7 +32,7 @@
   top: 0;
   left: 0;
   display: none;
-  overflow: auto;
+  overflow-y: scroll;
   width: 100%;
   max-width: 767.98px;
   max-height: 796px;
